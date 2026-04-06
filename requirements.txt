@@ -1,0 +1,7 @@
+# Python Environment Requirements
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+shap
