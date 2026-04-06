@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Marketing Prediction | Hoàng Phương Thảo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+  <style>
+    :root { --accent: #38bdf8; --bg: #0f172a; --text: #f8fafc; }
+    body { background-color: var(--bg); color: var(--text); padding: 50px 20px; font-family: 'Inter', sans-serif; }
+    .container { max-width: 800px; margin: auto; background: #1e293b; padding: 40px; border-radius: 12px; border: 1px solid #334155; }
+    h1, h2, h3 { color: var(--accent); }
+    img { max-width: 100%; border-radius: 8px; margin: 20px 0; border: 1px solid #475569; }
+    pre { background: #000; padding: 15px; border-radius: 6px; overflow-x: auto; color: #fff; }
+    code { color: #f472b6; }
+    a { color: var(--accent); }
+    blockquote { border-left: 5px solid var(--accent); background: rgba(56, 189, 248, 0.1); padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://hoangphuongthao.id.vn/">&larr; Quay lại Portfolio</a>
+    
+    <h1>Dự Đoán Đăng Ký Gửi Tiết Kiệm (Bank Marketing)</h1>
+    <p><em>Tác giả: Hoàng Phương Thảo</em></p>
+    
+    <hr>
+
+    <h2>1. Giới Thiệu</h2>
+    <p>Dự án này sử dụng Machine Learning để dự đoán xem khách hàng có đăng ký gửi tiền tiết kiệm (term deposit) hay không dựa trên dữ liệu các chiến dịch tiếp thị qua điện thoại của ngân hàng. Mục tiêu là giúp ngân hàng tối ưu hóa nguồn lực và tăng tỷ lệ chuyển đổi khách hàng.</p>
+
+    <h2>2. Kết Quả Chính</h2>
+    <ul>
+      <li><strong>Thời lượng cuộc gọi (Duration):</strong> Là yếu tố quan trọng nhất. Cuộc gọi càng lâu, tỷ lệ đăng ký càng cao.</li>
+      <li><strong>Số dư tài khoản (Balance):</strong> Khách hàng có số dư cao có xu hướng đầu tư nhiều hơn.</li>
+      <li><strong>Kết quả trước đó (Poutcome):</strong> Thành công trong quá khứ là chỉ báo mạnh mẽ cho tương lai.</li>
+    </ul>
+
+    <h2>3. Hình Ảnh Phân Tích</h2>
+    
+    <h3>Giải thích mô hình (SHAP)</h3>
+    <img src="images/shap_summary.png" alt="SHAP Summary">
+    <p><em>Hình 1: Các đặc trưng ảnh hưởng nhất đến quyết định của khách hàng.</em></p>
+
+    <h3>Ma Trận Nhầm Lẫn (Confusion Matrix)</h3>
+    <img src="images/confusion_matrix.png" alt="Confusion Matrix">
+
+    <h3>Đường cong ROC</h3>
+    <img src="images/roc_curve.png" alt="ROC Curve">
+
+    <h2>4. Ứng Dụng Kinh Doanh</h2>
+    <blockquote>
+      Chúng tôi phân loại ưu tiên liên hệ: 
+      <strong>Cao (>70%)</strong>, <strong>Trung bình (40-70%)</strong>, và <strong>Thấp (<40%)</strong> để tiết kiệm chi phí vận hành.
+    </blockquote>
+
+    <h2>5. Mã Nguồn</h2>
+    <p>Xem chi tiết tại <a href="https://github.com/hoangthao0503-bot/predict-term-deposit-bank-marketing">GitHub Repository</a>.</p>
+
+  </div>
+</body>
+</html>
